@@ -9,6 +9,7 @@ class conta extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // Adicionando seção de Conta
           Container(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -32,11 +33,13 @@ class conta extends StatelessWidget {
           SizedBox(
             height: 30,
           ),
+          // Ícones de pix, pagamentos, QR code e transferir
           Container(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Container(
+                  //Ícone PIX
                   child: Column(children: [
                     IconButton.filledTonal(
                         style: ButtonStyle(
@@ -50,6 +53,7 @@ class conta extends StatelessWidget {
                     Text("Pix")
                   ]),
                 ),
+                //Ícone PAGAMENTOS
                 Container(
                   child: Column(children: [
                     IconButton.filledTonal(
@@ -64,6 +68,7 @@ class conta extends StatelessWidget {
                     Text("Pagamentos")
                   ]),
                 ),
+                // Ícone QR CODE
                 Container(
                   child: Column(children: [
                     IconButton.filledTonal(
@@ -78,6 +83,7 @@ class conta extends StatelessWidget {
                     Text("QRcode")
                   ]),
                 ),
+                // Ícone TRANSFERIR
                 Container(
                   child: Column(children: [
                     IconButton.filledTonal(
@@ -98,6 +104,7 @@ class conta extends StatelessWidget {
           SizedBox(
             height: 30,
           ),
+          // Card "Meus Cartões" com ícone
           Card(
             elevation: 0,
             // margin: EdgeInsets.symmetric(vertical: 15, horizontal: 5.0),
@@ -110,6 +117,7 @@ class conta extends StatelessWidget {
           SizedBox(
             height: 30,
           ),
+          // Card "Guarde seu dinheiro em caixinhas" com subtítulo
           Card(
             elevation: 0,
             // margin: EdgeInsets.symmetric(vertical: 15.0, horizontal: 5.0),
@@ -122,11 +130,13 @@ class conta extends StatelessWidget {
                 subtitle: Text("Acessando a área de planejamento",
                     style: TextStyle(fontSize: 15))),
           ),
+          // Padding do Divider e Divider
           Padding(padding: EdgeInsets.fromLTRB(0, 30, 0, 30),
           child: Divider(height: 1)),
           SizedBox(
             height: 20,
           ),
+          // Seção "Cartão de crédito"
           Container(
             child: Column(children: [
               Row(
@@ -156,6 +166,7 @@ class conta extends StatelessWidget {
           SizedBox(
             height: 15,
           ),
+          // Botão "Renegociar"
            ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Color(0xFF8A05BE), // Cor do botão
@@ -172,11 +183,13 @@ class conta extends StatelessWidget {
           SizedBox(
             height: 15,
           ),
+          // Segundo Divider 
           Padding(padding: EdgeInsets.fromLTRB(0, 30, 0, 30),
           child: Divider(height: 1)),
           SizedBox(
             height: 10,
           ),
+          // Seção "Empréstimo"
           Container(
             child: Column(children: [
               Row(
@@ -203,8 +216,9 @@ class conta extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
+          // Seção "Descubra mais"
           Container(
-            //CARD FINAL
+            //Seção "Descubra mais"
             child: Column(children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -220,15 +234,14 @@ class conta extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-
-
-
+        // Card final da seção "Descubra mais"
           Card(
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 Container(
                   height: 150.0,
+                  // Imagem do Card e decoração de bordas
                   decoration: BoxDecoration(
                     image: const DecorationImage(
                       image: AssetImage('images/seguroVida.png'),
@@ -240,6 +253,7 @@ class conta extends StatelessWidget {
                     ),
                   ),
                 ),
+                // Texto "Seguro de vida" e descrição com padding simétrico na vertical de 5px
                 Padding(
                   padding: const EdgeInsets.all(10),
                   child: Column(
@@ -264,6 +278,7 @@ class conta extends StatelessWidget {
                     ],
                   ),
                 ),
+                // Botão de "Conhecer" com padding 10px no bottom e 5px no top
                 Padding(padding: EdgeInsets.fromLTRB(0, 5, 0, 10)),
                 ButtonBar(
                   alignment: MainAxisAlignment.start,

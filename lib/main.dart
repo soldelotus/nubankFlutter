@@ -18,6 +18,7 @@ class MainAppState extends State<MainApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        // AppBar possuindo leading de IconButton e 3 actions nestes ícones
         appBar: AppBar(
             leading: IconButton(
               style: ButtonStyle(
